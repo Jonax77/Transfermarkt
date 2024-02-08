@@ -7,18 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1050B5845D8417A3B180312D /* Pods_Transfermarkt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F55CCFF8393D185A3662DA /* Pods_Transfermarkt.framework */; };
 		8E12FB9F2B57368600B046B7 /* TransfermarktApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FB9E2B57368600B046B7 /* TransfermarktApp.swift */; };
 		8E12FBA12B57368600B046B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBA02B57368600B046B7 /* ContentView.swift */; };
 		8E12FBA32B57368700B046B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E12FBA22B57368700B046B7 /* Assets.xcassets */; };
 		8E12FBA62B57368700B046B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E12FBA52B57368700B046B7 /* Preview Assets.xcassets */; };
+		8E12FBAF2B573A5400B046B7 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBAE2B573A5400B046B7 /* DataModel.swift */; };
+		8E12FBB12B573AE600B046B7 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBB02B573AE600B046B7 /* APIConfig.swift */; };
+		8E12FBB32B57472100B046B7 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBB22B57472100B046B7 /* APIManager.swift */; };
+		8E12FBB62B574A1D00B046B7 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBB52B574A1D00B046B7 /* SearchView.swift */; };
+		8E12FBB82B574A6A00B046B7 /* ClubSearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBB72B574A6A00B046B7 /* ClubSearchResultCell.swift */; };
+		8E12FBBF2B574F1600B046B7 /* SpaceGrotesk-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E12FBBA2B574F1600B046B7 /* SpaceGrotesk-SemiBold.ttf */; };
+		8E12FBC02B574F1600B046B7 /* SpaceGrotesk-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E12FBBB2B574F1600B046B7 /* SpaceGrotesk-Regular.ttf */; };
+		8E12FBC12B574F1600B046B7 /* SpaceGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E12FBBC2B574F1600B046B7 /* SpaceGrotesk-Medium.ttf */; };
+		8E12FBC22B574F1600B046B7 /* SpaceGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E12FBBD2B574F1600B046B7 /* SpaceGrotesk-Bold.ttf */; };
+		8E12FBC32B574F1600B046B7 /* SpaceGrotesk-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E12FBBE2B574F1600B046B7 /* SpaceGrotesk-Light.ttf */; };
+		8E12FBC62B57551D00B046B7 /* SpaceGrotesk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBC52B57551D00B046B7 /* SpaceGrotesk.swift */; };
+		8E12FBC92B592BDE00B046B7 /* PlayerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBC82B592BDE00B046B7 /* PlayerInfoView.swift */; };
+		8E12FBCC2B5B6FCA00B046B7 /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBCB2B5B6FCA00B046B7 /* StringUtil.swift */; };
+		8E12FBCF2B5BA7FC00B046B7 /* ClubInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBCE2B5BA7FC00B046B7 /* ClubInfoView.swift */; };
+		8E12FBD12B63A31800B046B7 /* InjuryHistoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBD02B63A31800B046B7 /* InjuryHistoryList.swift */; };
+		8E12FBD32B63A40700B046B7 /* PlayerProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBD22B63A40700B046B7 /* PlayerProfileHeader.swift */; };
+		8E12FBD72B64A05900B046B7 /* TransferHistoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBD62B64A05900B046B7 /* TransferHistoryList.swift */; };
+		8E12FBD92B64B67D00B046B7 /* PlayerBasicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBD82B64B67D00B046B7 /* PlayerBasicInfo.swift */; };
+		8E12FBDB2B64BD9700B046B7 /* MarketValueLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBDA2B64BD9700B046B7 /* MarketValueLineChart.swift */; };
+		8E12FBDD2B64BE1400B046B7 /* PlayerStatsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBDC2B64BE1400B046B7 /* PlayerStatsTable.swift */; };
+		8E12FBDF2B65CA7F00B046B7 /* ClubProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBDE2B65CA7F00B046B7 /* ClubProfileHeader.swift */; };
+		8E12FBE12B65E91500B046B7 /* ClubBasicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBE02B65E91500B046B7 /* ClubBasicInfo.swift */; };
+		8E12FBE32B65ED7800B046B7 /* HistoricalCrestGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBE22B65ED7800B046B7 /* HistoricalCrestGallery.swift */; };
+		8E12FBE52B65FAA400B046B7 /* ClubSquadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12FBE42B65FAA400B046B7 /* ClubSquadView.swift */; };
+		8ECE04482B6DE3A500BCDC43 /* FootBallAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE04472B6DE3A500BCDC43 /* FootBallAPIManager.swift */; };
+		8ECE044A2B6DE45B00BCDC43 /* FootballAPIDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE04492B6DE45B00BCDC43 /* FootballAPIDataModel.swift */; };
+		8ECE044E2B6E187300BCDC43 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE044D2B6E187300BCDC43 /* ScheduleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86ECE2611D4E096CDD193039 /* Pods-Transfermarkt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transfermarkt.release.xcconfig"; path = "Target Support Files/Pods-Transfermarkt/Pods-Transfermarkt.release.xcconfig"; sourceTree = "<group>"; };
 		8E12FB9B2B57368600B046B7 /* Transfermarkt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transfermarkt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E12FB9E2B57368600B046B7 /* TransfermarktApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfermarktApp.swift; sourceTree = "<group>"; };
 		8E12FBA02B57368600B046B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8E12FBA22B57368700B046B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E12FBA52B57368700B046B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E12FBAE2B573A5400B046B7 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		8E12FBB02B573AE600B046B7 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		8E12FBB22B57472100B046B7 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		8E12FBB52B574A1D00B046B7 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		8E12FBB72B574A6A00B046B7 /* ClubSearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubSearchResultCell.swift; sourceTree = "<group>"; };
+		8E12FBBA2B574F1600B046B7 /* SpaceGrotesk-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-SemiBold.ttf"; sourceTree = "<group>"; };
+		8E12FBBB2B574F1600B046B7 /* SpaceGrotesk-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Regular.ttf"; sourceTree = "<group>"; };
+		8E12FBBC2B574F1600B046B7 /* SpaceGrotesk-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Medium.ttf"; sourceTree = "<group>"; };
+		8E12FBBD2B574F1600B046B7 /* SpaceGrotesk-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Bold.ttf"; sourceTree = "<group>"; };
+		8E12FBBE2B574F1600B046B7 /* SpaceGrotesk-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Light.ttf"; sourceTree = "<group>"; };
+		8E12FBC42B57500800B046B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8E12FBC52B57551D00B046B7 /* SpaceGrotesk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceGrotesk.swift; sourceTree = "<group>"; };
+		8E12FBC82B592BDE00B046B7 /* PlayerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoView.swift; sourceTree = "<group>"; };
+		8E12FBCB2B5B6FCA00B046B7 /* StringUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
+		8E12FBCE2B5BA7FC00B046B7 /* ClubInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubInfoView.swift; sourceTree = "<group>"; };
+		8E12FBD02B63A31800B046B7 /* InjuryHistoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjuryHistoryList.swift; sourceTree = "<group>"; };
+		8E12FBD22B63A40700B046B7 /* PlayerProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProfileHeader.swift; sourceTree = "<group>"; };
+		8E12FBD62B64A05900B046B7 /* TransferHistoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferHistoryList.swift; sourceTree = "<group>"; };
+		8E12FBD82B64B67D00B046B7 /* PlayerBasicInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBasicInfo.swift; sourceTree = "<group>"; };
+		8E12FBDA2B64BD9700B046B7 /* MarketValueLineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketValueLineChart.swift; sourceTree = "<group>"; };
+		8E12FBDC2B64BE1400B046B7 /* PlayerStatsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsTable.swift; sourceTree = "<group>"; };
+		8E12FBDE2B65CA7F00B046B7 /* ClubProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubProfileHeader.swift; sourceTree = "<group>"; };
+		8E12FBE02B65E91500B046B7 /* ClubBasicInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubBasicInfo.swift; sourceTree = "<group>"; };
+		8E12FBE22B65ED7800B046B7 /* HistoricalCrestGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalCrestGallery.swift; sourceTree = "<group>"; };
+		8E12FBE42B65FAA400B046B7 /* ClubSquadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubSquadView.swift; sourceTree = "<group>"; };
+		8ECE04472B6DE3A500BCDC43 /* FootBallAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootBallAPIManager.swift; sourceTree = "<group>"; };
+		8ECE04492B6DE45B00BCDC43 /* FootballAPIDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballAPIDataModel.swift; sourceTree = "<group>"; };
+		8ECE044D2B6E187300BCDC43 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		C16069BA8693DC1E1600D92D /* Pods-Transfermarkt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transfermarkt.debug.xcconfig"; path = "Target Support Files/Pods-Transfermarkt/Pods-Transfermarkt.debug.xcconfig"; sourceTree = "<group>"; };
+		C5F55CCFF8393D185A3662DA /* Pods_Transfermarkt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transfermarkt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1050B5845D8417A3B180312D /* Pods_Transfermarkt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +97,8 @@
 			children = (
 				8E12FB9D2B57368600B046B7 /* Transfermarkt */,
 				8E12FB9C2B57368600B046B7 /* Products */,
+				FBB2E43AE33391016B968453 /* Pods */,
+				C5309EADDB3C5D1D760467CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +113,15 @@
 		8E12FB9D2B57368600B046B7 /* Transfermarkt */ = {
 			isa = PBXGroup;
 			children = (
+				8ECE044C2B6E185700BCDC43 /* Schedule Screen */,
+				8E12FBCD2B5BA7EA00B046B7 /* Club Info Screen */,
+				8E12FBCA2B5B688A00B046B7 /* Utils */,
+				8E12FBC72B592B9D00B046B7 /* Player Info Screen */,
+				8E12FBC42B57500800B046B7 /* Info.plist */,
+				8E12FBB92B574EFA00B046B7 /* Font */,
+				8E12FBB42B574A0B00B046B7 /* Search Screen */,
+				8E12FBAD2B573A2500B046B7 /* Data */,
+				8E12FBAC2B5739E600B046B7 /* Config */,
 				8E12FB9E2B57368600B046B7 /* TransfermarktApp.swift */,
 				8E12FBA02B57368600B046B7 /* ContentView.swift */,
 				8E12FBA22B57368700B046B7 /* Assets.xcassets */,
@@ -67,6 +138,130 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8E12FBAC2B5739E600B046B7 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8E12FBC52B57551D00B046B7 /* SpaceGrotesk.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		8E12FBAD2B573A2500B046B7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8E12FBAE2B573A5400B046B7 /* DataModel.swift */,
+				8E12FBB02B573AE600B046B7 /* APIConfig.swift */,
+				8E12FBB22B57472100B046B7 /* APIManager.swift */,
+				8ECE04472B6DE3A500BCDC43 /* FootBallAPIManager.swift */,
+				8ECE04492B6DE45B00BCDC43 /* FootballAPIDataModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8E12FBB42B574A0B00B046B7 /* Search Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8E12FBB52B574A1D00B046B7 /* SearchView.swift */,
+				8E12FBB72B574A6A00B046B7 /* ClubSearchResultCell.swift */,
+			);
+			path = "Search Screen";
+			sourceTree = "<group>";
+		};
+		8E12FBB92B574EFA00B046B7 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				8E12FBBD2B574F1600B046B7 /* SpaceGrotesk-Bold.ttf */,
+				8E12FBBE2B574F1600B046B7 /* SpaceGrotesk-Light.ttf */,
+				8E12FBBC2B574F1600B046B7 /* SpaceGrotesk-Medium.ttf */,
+				8E12FBBB2B574F1600B046B7 /* SpaceGrotesk-Regular.ttf */,
+				8E12FBBA2B574F1600B046B7 /* SpaceGrotesk-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		8E12FBC72B592B9D00B046B7 /* Player Info Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8E12FBD52B63A41A00B046B7 /* Viewmodel */,
+				8E12FBD42B63A40E00B046B7 /* View */,
+			);
+			path = "Player Info Screen";
+			sourceTree = "<group>";
+		};
+		8E12FBCA2B5B688A00B046B7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8E12FBCB2B5B6FCA00B046B7 /* StringUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8E12FBCD2B5BA7EA00B046B7 /* Club Info Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8ECE044B2B6E13F100BCDC43 /* ViewModel */,
+				8E12FBCE2B5BA7FC00B046B7 /* ClubInfoView.swift */,
+				8E12FBDE2B65CA7F00B046B7 /* ClubProfileHeader.swift */,
+				8E12FBE02B65E91500B046B7 /* ClubBasicInfo.swift */,
+				8E12FBE22B65ED7800B046B7 /* HistoricalCrestGallery.swift */,
+				8E12FBE42B65FAA400B046B7 /* ClubSquadView.swift */,
+			);
+			path = "Club Info Screen";
+			sourceTree = "<group>";
+		};
+		8E12FBD42B63A40E00B046B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E12FBC82B592BDE00B046B7 /* PlayerInfoView.swift */,
+				8E12FBD02B63A31800B046B7 /* InjuryHistoryList.swift */,
+				8E12FBD22B63A40700B046B7 /* PlayerProfileHeader.swift */,
+				8E12FBD62B64A05900B046B7 /* TransferHistoryList.swift */,
+				8E12FBD82B64B67D00B046B7 /* PlayerBasicInfo.swift */,
+				8E12FBDA2B64BD9700B046B7 /* MarketValueLineChart.swift */,
+				8E12FBDC2B64BE1400B046B7 /* PlayerStatsTable.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E12FBD52B63A41A00B046B7 /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		8ECE044B2B6E13F100BCDC43 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8ECE044C2B6E185700BCDC43 /* Schedule Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8ECE044D2B6E187300BCDC43 /* ScheduleView.swift */,
+			);
+			path = "Schedule Screen";
+			sourceTree = "<group>";
+		};
+		C5309EADDB3C5D1D760467CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5F55CCFF8393D185A3662DA /* Pods_Transfermarkt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBB2E43AE33391016B968453 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C16069BA8693DC1E1600D92D /* Pods-Transfermarkt.debug.xcconfig */,
+				86ECE2611D4E096CDD193039 /* Pods-Transfermarkt.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E12FBA92B57368700B046B7 /* Build configuration list for PBXNativeTarget "Transfermarkt" */;
 			buildPhases = (
+				5F49D0C588DECCCC0515EBF0 /* [CP] Check Pods Manifest.lock */,
 				8E12FB972B57368600B046B7 /* Sources */,
 				8E12FB982B57368600B046B7 /* Frameworks */,
 				8E12FB992B57368600B046B7 /* Resources */,
+				0ACDC9AA212E371B1660B710 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,20 +322,89 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E12FBC22B574F1600B046B7 /* SpaceGrotesk-Bold.ttf in Resources */,
+				8E12FBC12B574F1600B046B7 /* SpaceGrotesk-Medium.ttf in Resources */,
 				8E12FBA62B57368700B046B7 /* Preview Assets.xcassets in Resources */,
 				8E12FBA32B57368700B046B7 /* Assets.xcassets in Resources */,
+				8E12FBC02B574F1600B046B7 /* SpaceGrotesk-Regular.ttf in Resources */,
+				8E12FBBF2B574F1600B046B7 /* SpaceGrotesk-SemiBold.ttf in Resources */,
+				8E12FBC32B574F1600B046B7 /* SpaceGrotesk-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ACDC9AA212E371B1660B710 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transfermarkt/Pods-Transfermarkt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transfermarkt/Pods-Transfermarkt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Transfermarkt/Pods-Transfermarkt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F49D0C588DECCCC0515EBF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Transfermarkt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E12FB972B57368600B046B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E12FBDB2B64BD9700B046B7 /* MarketValueLineChart.swift in Sources */,
+				8ECE04482B6DE3A500BCDC43 /* FootBallAPIManager.swift in Sources */,
+				8E12FBC92B592BDE00B046B7 /* PlayerInfoView.swift in Sources */,
+				8E12FBC62B57551D00B046B7 /* SpaceGrotesk.swift in Sources */,
+				8E12FBCC2B5B6FCA00B046B7 /* StringUtil.swift in Sources */,
+				8ECE044E2B6E187300BCDC43 /* ScheduleView.swift in Sources */,
 				8E12FBA12B57368600B046B7 /* ContentView.swift in Sources */,
 				8E12FB9F2B57368600B046B7 /* TransfermarktApp.swift in Sources */,
+				8E12FBD72B64A05900B046B7 /* TransferHistoryList.swift in Sources */,
+				8ECE044A2B6DE45B00BCDC43 /* FootballAPIDataModel.swift in Sources */,
+				8E12FBDD2B64BE1400B046B7 /* PlayerStatsTable.swift in Sources */,
+				8E12FBE52B65FAA400B046B7 /* ClubSquadView.swift in Sources */,
+				8E12FBDF2B65CA7F00B046B7 /* ClubProfileHeader.swift in Sources */,
+				8E12FBD12B63A31800B046B7 /* InjuryHistoryList.swift in Sources */,
+				8E12FBB32B57472100B046B7 /* APIManager.swift in Sources */,
+				8E12FBB82B574A6A00B046B7 /* ClubSearchResultCell.swift in Sources */,
+				8E12FBE12B65E91500B046B7 /* ClubBasicInfo.swift in Sources */,
+				8E12FBB12B573AE600B046B7 /* APIConfig.swift in Sources */,
+				8E12FBE32B65ED7800B046B7 /* HistoricalCrestGallery.swift in Sources */,
+				8E12FBCF2B5BA7FC00B046B7 /* ClubInfoView.swift in Sources */,
+				8E12FBB62B574A1D00B046B7 /* SearchView.swift in Sources */,
+				8E12FBD92B64B67D00B046B7 /* PlayerBasicInfo.swift in Sources */,
+				8E12FBD32B63A40700B046B7 /* PlayerProfileHeader.swift in Sources */,
+				8E12FBAF2B573A5400B046B7 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +532,7 @@
 		};
 		8E12FBAA2B57368700B046B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C16069BA8693DC1E1600D92D /* Pods-Transfermarkt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -274,8 +541,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Transfermarkt/Preview Content\"";
 				DEVELOPMENT_TEAM = WJRTAQ26PR;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Transfermarkt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -285,6 +553,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING1 = "";
 				PRODUCT_BUNDLE_IDENTIFIER = LINLAB.Transfermarkt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -295,6 +564,7 @@
 		};
 		8E12FBAB2B57368700B046B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86ECE2611D4E096CDD193039 /* Pods-Transfermarkt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,8 +573,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Transfermarkt/Preview Content\"";
 				DEVELOPMENT_TEAM = WJRTAQ26PR;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Transfermarkt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -314,6 +585,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING1 = "";
 				PRODUCT_BUNDLE_IDENTIFIER = LINLAB.Transfermarkt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
